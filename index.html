@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en" data-layout="horizontal" data-topbar="light" data-preloader="disable">
+
+<head>
+    <meta charset="utf-8" />
+    <title>netdia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- App icon -->
+    <link rel="icon" href="assets/images/logo-sm.ico">
+
+    <!-- Layout config Js -->
+    <script src="assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<!-- Begin page -->
+<header id="page-topbar">
+    <div class="layout-width">
+        <div class="navbar-header pe-2">
+            <!-- LOGO -->
+            <div class="horizontal-logo p-0">
+                <a href="index.html" class="logo logo-dark">
+                    <span class="logo-lg">
+                        <img src="assets/images/logo-dark.png" alt="" height="18">
+                    </span>
+                </a>
+            </div>
+            <div>
+                <div class="dropdown header-item topbar-user">
+                    <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="d-flex align-items-center">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-4.jpg" alt="Header Avatar">
+                            <span class="text-start ms-xl-2">
+                                <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Merissa</span>
+                                <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Blogger</span>
+                            </span>
+                        </span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <!-- item-->
+                        <h6 class="dropdown-header">Welcome Merissa!</h6>
+                        <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Profile</span></a>
+                        <a class="dropdown-item" href="#"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- start hero section -->
+<section class="section nft-hero" id="hero" style="background-image: url(assets/images/bg-home.jpg); height: 100vh;">
+    <div class="container pt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-sm-10">
+                <div class="text-center pt-2">
+                    <h1 class="display-4 fw-medium mb-4 lh-base">Discover Insights & Share <span class="text-primary">Your Thoughts</span></h1>
+                    <p class="lead text-body-secondary lh-base mb-4 pb-2">
+                        Express your thoughts to get wilder influence from the internet and get more insights from knowledgeable people
+                    </p>
+                    <div class="hstack gap-3 justify-content-center">
+                        <a href="create-article.html" class="btn btn-outline-primary fw-semibold">Write Now <i class="ri-arrow-right-line align-middle ms-1"></i></a>
+                        <a href="#articles" class="btn btn-primary">Explore Now <i class="ri-arrow-right-line align-middle ms-1"></i></a>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end hero section -->
+
+<!-- start main content-->
+<div class="main-content" id="articles">
+    <div class="container-fluid mb-5">
+        <div class="row g-2 mb-4 mt-4">
+            <div class="col-sm-auto">
+                <div class="d-flex justify-content-sm-start gap-2 flex-wrap">
+                    <div class="search-box">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <i class="ri-search-line search-icon"></i>
+                    </div>
+                    <div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected disabled>Category</option>
+                            <option value="Featured">Featured</option>
+                            <option value="Blog">Blog</option>
+                            <option value="Technical">Technical</option>
+                            <option value="News">News</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected disabled>Sort by </option>
+                            <option value="Newest">Newest</option>
+                            <option value="Oldest">Oldest</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="d-flex justify-content-sm-end">
+                    <a href="create-article.html" class="btn btn-primary"><i class="ri-add-line align-bottom me-1"></i>Create New</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Start -->
+
+        <!-- row 1 -->
+        <div class="row">
+            <!-- article 1 -->
+            <div class="col-xxl-3 col-sm-6 project-card">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="p-3 mt-n3 mx-n3 bg-soft-success rounded-top">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <button type="button" class="btn avatar-xs p-0 favourite-btn">
+                                    <span class="avatar-title bg-transparent fs-15">
+                                        <i class="ri-star-fill"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="text-center pb-2">
+                                <img src="assets/images/mail_chimp.png" alt="" height="32">
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <div class="badge badge-soft-success fs-12 mb-3">Featured</div>
+                            <div class="text-muted d-flex align-items-center mb-2 gap-3">
+                                <div><i class="ri-calendar-line me-1 align-bottom"></i>20 June, 2023</div>
+                                <div><i class="ri-user-line me-1 align-bottom"></i>Ena Kinata</div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="text-dark mb-2 fs-14 lh-base">Embracing Imperfection: The Power of Embracing Flaws</h5>
+                                <p class="text-muted text-truncate-two-lines mb-sm-0">In a world constantly bombarded with images of perfection and an incessant desire for flawlessness, it's easy to forget that imperfection is an inherent part of the human experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card body -->
+                </div>
+                <!-- end card -->
+            </div>
+            <!-- end article 1 -->
+            
+            <!-- article 2 -->
+            <div class="col-xxl-3 col-sm-6 project-card">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="p-3 mt-n3 mx-n3 bg-soft-info rounded-top">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <button type="button" class="btn avatar-xs p-0 favourite-btn">
+                                    <span class="avatar-title bg-transparent fs-15">
+                                        <i class="ri-star-fill"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="text-center pb-2">
+                                <img src="assets/images/giftbox.png" alt="" height="32">
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <div class="badge badge-soft-success fs-12 mb-3">Featured</div>
+                            <div class="text-muted d-flex align-items-center mb-2 gap-3">
+                                <div><i class="ri-calendar-line me-1 align-bottom"></i>18 June, 2023</div>
+                                <div><i class="ri-user-line me-1 align-bottom"></i>Doni Andreas</div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="text-dark mb-2 fs-14 lh-base">The Art of Mindful Living: Finding Peace in the Present Moment</h5>
+                                <p class="text-muted text-truncate-two-lines mb-sm-0">In the fast-paced and chaotic world we live in, finding peace and tranquility can often feel like an elusive dream. However, the secret to a more fulfilling life lies in the practice of mindfulness</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card body -->
+                </div>
+                <!-- end card -->
+            </div>
+            <!-- end article 2 -->
+
+            <!-- article 3 -->
+            <div class="col-xxl-3 col-sm-6 project-card">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="p-3 mt-n3 mx-n3 bg-soft-warning rounded-top">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <button type="button" class="btn avatar-xs p-0 favourite-btn">
+                                    <span class="avatar-title bg-transparent fs-15">
+                                        <i class="ri-star-fill"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="text-center pb-1">
+                                <img src="assets/images/user-illustarator-2.png" alt="" height="35">
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <div class="badge badge-soft-secondary fs-12 mb-3">Blog</div>
+                            <div class="text-muted d-flex align-items-center mb-2 gap-3">
+                                <div><i class="ri-calendar-line me-1 align-bottom"></i>1 June, 2023</div>
+                                <div><i class="ri-user-line me-1 align-bottom"></i>Meliyana</div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="text-dark mb-2 fs-14 lh-base">Unlocking Your Creative Potential: Embracing Your Inner Artist</h5>
+                                <p class="text-muted text-truncate-two-lines mb-sm-0">Creativity is not limited to the realm of artists and writers; it is a fundamental aspect of being human. In this blog, we uncover the barriers that often hold us back from embracing our creative side and explore practical tips to unlock our creative potential.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card body -->
+                </div>
+                <!-- end card -->
+            </div>
+            <!-- end article 3 -->
+
+            <!-- article 4 -->
+            <div class="col-xxl-3 col-sm-6 project-card">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="p-3 mt-n3 mx-n3 bg-soft-secondary rounded-top">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <button type="button" class="btn avatar-xs p-0 favourite-btn active">
+                                    <span class="avatar-title bg-transparent fs-15">
+                                        <i class="ri-star-fill"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="text-center pb-0">
+                                <img src="assets/images/faq-img.png" alt="" height="40">
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <div class="badge badge-soft-primary fs-12 mb-3">Technical</div>
+                            <div class="text-muted d-flex align-items-center mb-2 gap-3">
+                                <div><i class="ri-calendar-line me-1 align-bottom"></i>27 May, 2023</div>
+                                <div><i class="ri-user-line me-1 align-bottom"></i>Hana Anastasia</div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="text-dark mb-2 fs-14 lh-base">Building Resilience: Bouncing Back Stronger from Life's Challenges</h5>
+                                <p class="text-muted text-truncate-two-lines mb-sm-0">
+                                    Life is filled with ups and downs, and building resilience is the key to navigating through adversity. This blog delves into the concept of resilience and offers valuable insights on how to develop mental toughness, adaptability, and the ability to bounce back stronger from setbacks.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card body -->
+                </div>
+                <!-- end card -->
+            </div>
+            <!-- end article 4 -->
+        </div>
+        <!-- end row 1-->
+
+        <!-- row 2 -->
+        <div class="row">
+            <!-- article 5 -->
+            <div class="col-xxl-3 col-sm-6 project-card">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="p-3 mt-n3 mx-n3 bg-soft-info rounded-top">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <button type="button" class="btn avatar-xs p-0 favourite-btn">
+                                    <span class="avatar-title bg-transparent fs-15">
+                                        <i class="ri-star-fill"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="text-center pb-2">
+                                <img src="assets/images/innovation.png" alt="" height="32">
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <div class="badge badge-soft-danger fs-12 mb-3">News</div>
+                            <div class="text-muted d-flex align-items-center mb-2 gap-3">
+                                <div><i class="ri-calendar-line me-1 align-bottom"></i>25 May, 2023</div>
+                                <div><i class="ri-user-line me-1 align-bottom"></i>Hendra Nata</div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="text-dark mb-2 fs-14 lh-base">Revolutionizing Urban Transport: Futuristic Hyperloop System</h5>
+                                <p class="text-muted text-truncate-two-lines mb-sm-0">In a groundbreaking move towards revolutionizing urban transportation, a futuristic Hyperloop system promises to transform the way we commute. The world's first commercial Hyperloop network, boasting impressive speeds and unparalleled efficiency, is set to be unveiled in a major city near you.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card body -->
+                </div>
+                <!-- end card -->
+            </div>
+            <!-- end article 5 -->
+            
+            <!-- article 6 -->
+            <div class="col-xxl-3 col-sm-6 project-card">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="p-3 mt-n3 mx-n3 bg-soft-danger rounded-top">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <button type="button" class="btn avatar-xs p-0 favourite-btn active">
+                                    <span class="avatar-title bg-transparent fs-15">
+                                        <i class="ri-star-fill"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="text-center pb-2">
+                                <img src="assets/images/mental.png" alt="" height="32">
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <div class="badge badge-soft-secondary fs-12 mb-3">Blog</div>
+                            <div class="text-muted d-flex align-items-center mb-2 gap-3">
+                                <div><i class="ri-calendar-line me-1 align-bottom"></i>24 May, 2023</div>
+                                <div><i class="ri-user-line me-1 align-bottom"></i>Lisa Karla</div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="text-dark mb-2 fs-14 lh-base">Unplug to Reconnect: The Power of Digital Detox for Mental Clarity</h5>
+                                <p class="text-muted text-truncate-two-lines mb-sm-0">Our constant digital connectivity has transformed the way we live, but it also comes with its drawbacks. In this blog, we discuss the importance of unplugging from our screens and taking a digital detox to regain mental clarity, improve focus, and nurture meaningful connections.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card body -->
+                </div>
+                <!-- end card -->
+            </div>
+            <!-- end article 6 -->
+
+            <!-- article 7 -->
+            <div class="col-xxl-3 col-sm-6 project-card">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="p-3 mt-n3 mx-n3 bg-soft-success rounded-top">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <button type="button" class="btn avatar-xs p-0 favourite-btn">
+                                    <span class="avatar-title bg-transparent fs-15">
+                                        <i class="ri-star-fill"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="text-center pb-2">
+                                <img src="assets/images/leaf.png" alt="" height="32">
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <div class="badge badge-soft-success fs-12 mb-3">Featured</div>
+                            <div class="text-muted d-flex align-items-center mb-2 gap-3">
+                                <div><i class="ri-calendar-line me-1 align-bottom"></i>19 May, 2023</div>
+                                <div><i class="ri-user-line me-1 align-bottom"></i>Mario Veno</div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="text-dark mb-2 fs-14 lh-base">Discovering Solace in Nature: The Healing Power of the Outdoors</h5>
+                                <p class="text-muted text-truncate-two-lines mb-sm-0">Amidst the concrete jungles and the hustle of urban life, nature beckons with its soothing embrace. This blog celebrates the healing power of the great outdoors and the profound impact it can have on our mental and physical well-being.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card body -->
+                </div>
+                <!-- end card -->
+            </div>
+            <!-- end article 7 -->
+
+            <!-- article 8 -->
+            <div class="col-xxl-3 col-sm-6 project-card">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="p-3 mt-n3 mx-n3 bg-soft-secondary rounded-top">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <button type="button" class="btn avatar-xs p-0 favourite-btn active">
+                                    <span class="avatar-title bg-transparent fs-15">
+                                        <i class="ri-star-fill"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="text-center pb-2">
+                                <img src="assets/images/love-yourself.png" alt="" height="32">
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <div class="badge badge-soft-secondary fs-12 mb-3">Blog</div>
+                            <div class="text-muted d-flex align-items-center mb-2 gap-3">
+                                <div><i class="ri-calendar-line me-1 align-bottom"></i>10 May, 2023</div>
+                                <div><i class="ri-user-line me-1 align-bottom"></i>Beka Jemala</div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="text-dark mb-2 fs-14 lh-base">The Journey of Self-Discovery: Embracing Your True Authentic Self</h5>
+                                <p class="text-muted text-truncate-two-lines mb-sm-0">
+                                    Embarking on a journey of self-discovery can be both daunting and liberating. In this blog, we delve into the process of self-exploration and how it leads to a deeper understanding of our true authentic selves.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card body -->
+                </div>
+                <!-- end card -->
+            </div>
+            <!-- end article 8 -->
+        </div>
+        <!-- end row 2 -->
+        
+        <div class="row g-0 text-center text-sm-start align-items-center mb-5">
+            <div class="col-sm-6 mb-5">
+                <div>
+                    <p class="mb-sm-0 text-muted">Showing <span class="fw-semibold">1</span> to <span class="fw-semibold">8</span> of <span class="fw-semibold text-decoration-underline">36</span> entries</p>
+                </div>
+            </div>
+            <!-- end col -->
+            <div class="col-sm-6 mb-5">
+                <ul class="pagination pagination-separated justify-content-center justify-content-sm-end mb-sm-0">
+                    <li class="page-item disabled">
+                        <a href="#" class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item active">
+                        <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item ">
+                        <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">4</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">5</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">Next</a>
+                    </li>
+                </ul>
+            </div><!-- end col -->
+        </div><!-- end row -->
+    <!-- container -->
+    </div>
+    <!-- End Page-content -->
+</div>
+<!-- end main content-->
+    
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    2023 © netdia.
+                </div>
+                <div class="col-sm-6">
+                    <div class="text-sm-end d-none d-sm-block">
+                        Design & Develop by netdia
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--start back-to-top-->
+    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+    <!--end back-to-top-->
+
+    <!--preloader-->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner-border text-primary avatar-sm" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- project list init -->
+    <script src="assets/js/pages/project-list.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

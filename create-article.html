@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en" data-layout="horizontal" data-topbar="light" data-preloader="disable">
+
+<head>
+    <meta charset="utf-8" />
+    <title>netdia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- App icon -->
+    <link rel="icon" href="assets/images/logo-sm.ico">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- Layout config Js -->
+    <script src="assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<!-- Begin page -->
+<header id="page-topbar">
+    <div class="layout-width">
+        <div class="navbar-header pe-2">
+            <!-- LOGO -->
+            <div class="horizontal-logo p-0">
+                <a href="index.html" class="logo logo-dark">
+                    <span class="logo-lg">
+                        <img src="assets/images/logo-dark.png" alt="" height="18">
+                    </span>
+                </a>
+            </div>
+            <div>
+                <div class="dropdown header-item topbar-user">
+                    <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="d-flex align-items-center">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-4.jpg" alt="Header Avatar">
+                            <span class="text-start ms-xl-2">
+                                <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Merissa</span>
+                                <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Blogger</span>
+                            </span>
+                        </span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <!-- item-->
+                        <h6 class="dropdown-header">Welcome Merissa!</h6>
+                        <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Profile</span></a>
+                        <a class="dropdown-item" href="#"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Start main-content -->
+<div class="main-content">
+    <div class="container-fluid pt-5 pb-5">
+        <!-- start page title -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                    <h4 class="mb-sm-0">Create Article</h4>
+                    <div class="page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a href="index.html">Articles</a></li>
+                            <li class="breadcrumb-item active">Create New Article</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end page title -->
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label" for="project-title-input">Title</label>
+                            <input type="text" class="form-control" id="project-title-input" placeholder="Enter article title">
+                        </div>
+                        <div class="mb-1">
+                            <label class="form-label">Content</label>
+                            <div id="ckeditor-classic">
+                                <p>Productivity is the cornerstone of achieving success and personal fulfillment in both our personal and professional lives. In a world filled with countless distractions and demands on our time, mastering the art of productivity has become essential for making the most of each day. This article delves into the core principles of productivity, offering practical strategies and tips to unlock your productivity potential and thrive in all aspects of life.</p>
+                                <br><img src="assets/images/task.png" alt="task image"><br>
+                                <ol>
+                                    <li>Prioritize Your Tasks and Set Clear Goals</li>
+                                    <li>Manage Time Wisely</li>
+                                    <li>Embrace the Power of Prioritization</li>
+                                    <li>Cultivate a Growth Mindset</li>
+                                    <li>Create a Distraction-Free Environment</li>
+                                    <li>Practice Mindfulness and Self-Care</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card body -->
+                </div>
+                <!-- end card -->
+            </div>
+            <!-- end col -->
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label" for="project-title-input">Publication Date</label>
+                            <input type="date" class="form-control" data-provider="flatpickr" data-date-format="d M, Y" data-deafult-date="25 12,2021">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="project-thumbnail-img">Thumbnail Image</label>
+                            <input class="form-control" id="project-thumbnail-img" type="file" accept="image/png, image/gif, image/jpeg">
+                        </div>
+                        <div class="mb-1">
+                            <label class="form-label" for="project-thumbnail-img">Cover Image</label>
+                            <input class="form-control" id="project-thumbnail-img" type="file" accept="image/png, image/gif, image/jpeg">
+                        </div>
+                    </div>
+                    <!-- end card body -->
+                </div>
+                <!-- end card -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="choices-categories-input" class="form-label">Category</label>
+                            <select class="form-select" data-choices data-choices-search-false id="choices-category-input">
+                                <option selected disabled>-- Select Category --</option>
+                                <option value="Featured">Featured</option>
+                                <option value="Blog">Blog</option>
+                                <option value="Technical">Technical</option>
+                                <option value="News">News</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="choices-categories-input" class="form-label">Tags</label>
+                            <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+                                <optgroup label="General">
+                                    <option value="Personal">Personal</option>
+                                    <option value="Professional">Professional</option>
+                                    <option value="Tips" selected>Tips</option>
+                                    <option value="Productivity" selected>Productivity</option>
+                                </optgroup>
+                                <optgroup label="Economic">
+                                    <option value="Management">Management</option>
+                                    <option value="Finance">Finance</option>
+                                    <option value="Investment">Investment</option>
+                                </optgroup>
+                                <optgroup label="Art & Technology">
+                                    <option value="Design">Design</option>
+                                    <option value="Creativity">Creativity</option>
+                                    <option value="Informatics">Informatics</option>
+                                    <option value="Innovation">Innovation</option>
+                                    <option value="Futuristic">Futuristic</option>
+                                </optgroup>
+                                <optgroup label="Health">
+                                    <option value="Mental Health">Mental Health</option>
+                                    <option value="Healing">Healing</option>
+                                    <option value="Psychology">Psychology</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- end card body -->
+                </div>
+                <!-- end card -->
+                <div class="text-end mb-4">
+                    <button type="submit" class="btn btn-danger w-sm me-2">Delete</button>
+                    <button type="submit" class="btn btn-secondary w-sm me-2">Draft</button>
+                    <button type="submit" class="btn btn-primary w-sm">Create</button>
+                </div>
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- container-fluid -->
+</div>
+<!-- End main-content -->
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- prismjs plugin -->
+    <script src="assets/libs/prismjs/prism.js"></script>
+
+    <!--jquery cdn-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--select2 cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="assets/js/pages/select2.init.js"></script>
+
+    <!-- ckeditor -->
+    <script src="assets/libs/@ckeditor/ckeditor5-build-classic/build/ckeditor.js"></script>
+
+    <!-- project-create init -->
+    <script src="assets/js/pages/project-create.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
