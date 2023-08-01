@@ -1,6 +1,6 @@
 # netdia
 Platform to find and share user's thoughts in article 
-netdia consists of frontend development implemented based on UI/UX design
+netdia consists of frontend development which is implemented based on the UI/UX design created
 
 netdia page:
 
